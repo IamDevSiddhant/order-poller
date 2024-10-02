@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: order-poller
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/Transactional_Outbox_Design
+    username: root
+    password: Siddhant007@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8081
+
+
+topic:
+  name: ORDER.POLLER.TP
